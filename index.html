@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>touchGrass</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Set the background color for the entire page */
+        body {
+            background-color: #69994d; /* Change body background color */
+            color: #333; /* Set default text color to dark gray */
+        }
+
+        /* Basic styles for the landing page */
+        #landing {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f9f9f9;
+            border-radius: 8px; /* Add rounded corners */
+            margin: 20px auto; /* Center the landing section */
+            max-width: 800px; /* Set a max width */
+        }
+        #landing h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        #landing p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        /* Styles for the navbar */
+        #nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center; /* Center the navigation items */
+        }
+        #nav li {
+            display: inline; /* Display items in a line */
+            margin: 0 15px; /* Add spacing between items */
+        }
+        #nav a {
+            color: #386440; /* Set link color */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 15px; /* Add padding for clickable area */
+            transition: color 0.3s; /* Smooth color transition on hover */
+        }
+        #nav a:hover {
+            color: #ba4748; /* Change color on hover */
+        }
+        /* Styles for the panels */
+        .panel {
+            width: 40%;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        #content {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        /* Centering the panels */
+        .panels-container {
+            text-align: center; /* Center the panels container */
+            margin: 20px 0; /* Add margin around the panels */
+        }
+/* Styles for the boxes */
+		.problem-box, .what-we-did-box, .applications-box, .challenge-box, .panel, .pane2, .about-us {
+			background: #fff; /* White background for clarity */
+			padding: 20px; /* Padding for inner spacing */
+			border-radius: 8px; /* Rounded corners */
+			margin: 20px auto; /* Centering the boxes */
+			max-width: 800px; /* Max width for uniformity */
+			text-align: center; /* Center text */
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+		}
+        .problem-box h1, .what-we-did-box h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .column-box {
+            display: inline-block;
+            width: 45%; /* Width of each column */
+            margin: 20px 2.5%;
+            padding: 20px;
+            background: #e3e3e3; /* Light background for column boxes */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .challenge-box {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            max-width: 800px;
+        }
+
+        /* Styles for the about us images */
+        .about-us-images {
+            display: flex;
+            justify-content: center; /* Center the images */
+            margin: 20px 0;
+        }
+        .about-us-images img {
+            max-width: 200px; /* Set a max width for images */
+            margin: 0 10px; /* Space between images */
+            border-radius: 8px; /* Rounded corners for images */
+        }
+		.panels-container {
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Space between the panes */
+    margin: 20px auto; /* Center the container */
+    max-width: 800px; /* Set a max width */
+}
+
+.panel {
+    background: #fff; /* Background for panels */
+    padding: 20px; /* Inner padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 48%; /* Adjust width to fit side by side */
+}
+
+.columns-container {
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: center; /* Center the items horizontally */
+    margin: 20px 0; /* Add some margin around the container */
+}
+
+.column-box {
+    flex: 1; /* Allow columns to grow and fill space equally */
+    max-width: 300px; /* Set a max width for each column */
+    margin: 0 10px; /* Add space between columns */
+    padding: 20px;
+    background: #e3e3e3; /* Light background for column boxes */
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+    </style>
+</head>
+<body class="is-preload">
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header">
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="userSelection.html">Sustainability Score Page</a></li>
+                <li><a href="uploadPic.html">Upload Image</a></li>
+                <li><a href="output.html">Output Page</a></li>
+                <li><a href="flower.html">Flower</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <!-- Landing Section -->
+    <section id="landing">
+        <h1>TouchGrass</h1>
+        <img src="path/to/logo.png" alt="Logo" style="max-width: 200px; margin-bottom: 10px;"> <!-- Space for logo -->
+        <p>Your slogan goes here.</p>
+    </section>
+
+    <!-- Problem We Are Trying to Solve Section -->
+    <div class="problem-box">
+        <h1>Problem We Are Trying to Solve</h1>
+        <p>Describe the problem here in detail and how your website aims to address it.</p>
+    </div>
+
+    <!-- What We Did Section -->
+    <div class="what-we-did-box">
+        <h1>What We Did</h1>
+        <div class="column-box">
+            <h2>Image Recognition of Flowers</h2>
+            <p>Learn more about how we identify flowers through images.</p>
+            <a href="imageRecognition.html">Go to Image Recognition</a>
+        </div>
+        <div class="column-box">
+            <h2>Sustainability Initiatives</h2>
+            <p>Discover our initiatives to promote sustainability.</p>
+            <a href="sustainability.html">Go to Sustainability Page</a>
+        </div>
+    </div>
+
+    <!-- Applications Section -->
+    <div class="applications-box">
+        <h2>Applications of the Website</h2>
+        <p>This website provides valuable resources for educators, students, and anyone interested in sustainability.</p>
+    </div>
+
+	<!-- Challenges Section -->
+	<div class="challenge-box">
+		<h2>Challenges</h2>
+		<p>Write down the challenges you've faced or are currently facing:</p>
+	</div>
+
+	<!-- About Us Section -->
+	<div class="about-us">
+		<h2>About Us</h2>
+		<p>This website is designed to promote sustainability awareness and encourage environmentally friendly practices.</p>
+		<div class="about-us-images">
+		<!-- Developer Panels -->
+		<div class="panels-container">
+			<div class="panel">
+				<img src="path/to/image1.jpg" alt="About Us Image 1">
+				<h3>Pane 1</h3>
+				<p>Content for pane 1.</p>
+			</div>
+			<div class="panel">
+				<img src="path/to/image2.jpg" alt="About Us Image 2">
+				<h3>Pane 2</h3>
+				<p>Content for pane 2.</p>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+	
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <p>&copy; Your Website Name. All rights reserved.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

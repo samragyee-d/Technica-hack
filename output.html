@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Score</title>
+    <link rel="stylesheet" href="assets/css/main.css"> <!-- Include main CSS for navigation -->
+    <link rel="stylesheet" href="assets/css/output.css"> <!-- Include the output page CSS -->
+    <style>
+        /* Basic styles for the score container */
+        #score-container {
+            text-align: center;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            max-width: 400px;
+        }
+        .score {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        /* Styles for the button */
+        .button {
+            display: inline-block; /* Make it behave like a button */
+            background-color: #f3ead6; /* Set background color */
+            color: #333; /* Text color */
+            padding: 10px 20px; /* Padding */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            font-size: 1.2em; /* Font size */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        .button:hover {
+            background-color: #e0d1b9; /* Slightly darker color on hover */
+        }
+        /* Styles for the "Upload a pic" link */
+        #link a {
+            font-size: 1.5em; /* Make the font larger */
+            color: #333; /* Darker color */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Allow margin and padding to work */
+            margin-top: 5px; /* Reduced margin for less gap */
+        }
+        #link a:hover {
+            color: #555; /* Change color on hover */
+        }
+        #link h3 {
+            margin-bottom: 5px; /* Reduce gap between heading and link */
+        }
+        #content {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        #nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center; /* Center the navigation items */
+        }
+        #nav li {
+            display: inline; /* Display items in a line */
+            margin: 0 15px; /* Add spacing between items */
+        }
+        #nav a {
+            color: #386440; /* Set link color */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 15px; /* Add padding for clickable area */
+            transition: color 0.3s; /* Smooth color transition on hover */
+        }
+        #nav a:hover {
+            color: #ba4748; /* Change color on hover */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="userSelection.html">Sustainability Score Page</a></li>
+                    <li><a href="uploadPic.html">Upload Image</a></li>
+                    <li class="current"><a href="output.html">Output Page</a></li>
+                    <li><a href="flower.html">Flower</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="score-container">
+            <h1>Your Score</h1>
+            <div class="score" id="score-display">0</div> <!-- Placeholder for the score -->
+            <a href="index.html" class="button">Go Back</a>
+            <div id="link">
+                <h3>Send link:</h3>
+                <a href="uploadPic.html">Upload a pic</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+ 

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Add some basic styles for the inputs */
+        .Inputs {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        #content {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        #nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center; /* Center the navigation items */
+        }
+        #nav li {
+            display: inline; /* Display items in a line */
+            margin: 0 15px; /* Add spacing between items */
+        }
+        #nav a {
+            color: #386440; /* Set link color */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 15px; /* Add padding for clickable area */
+            transition: color 0.3s; /* Smooth color transition on hover */
+        }
+        #nav a:hover {
+            color: #ba4748; /* Change color on hover */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+
+            <!-- Logo -->
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="userSelection.html">Sustainability Score Page</a></li>
+                    <li><a href="uploadPic.html">Upload Image</a></li>
+                    <li><a href="output.html">Output Page</a></li>
+                    <li><a href="flower.html">Flower</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="Inputs">
+            <h1>Survey Questions</h1>
+            <label for="age">Enter your age:</label>
+            <input type="text" id="age" name="age">
+
+            <label for="location">Which one of these options best describes your living situation?</label>
+            <select name="location" id="location">
+                <option value="Urban">Urban</option>
+                <option value="Suburban">Suburban</option>
+                <option value="Rural">Rural</option>
+            </select>
+
+            <label for="Diet-type">Which type of diet do you follow?</label>
+            <select name="Diet-type" id="Diet-type">
+                <option value="MostlyPlants">Mostly Plant Based</option>
+                <option value="Balanced">Balanced</option>
+                <option value="MostlyAnimal">Mostly Animal Based</option>
+            </select>
+
+            <label for="LocalFood">How often do you eat locally sourced food?</label>
+            <select name="LocalFood" id="LocalFood">
+                <option value="Often">Often</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Rarely">Rarely</option>
+            </select>
+
+            <label for="Transport">What is your primary mode of transportation?</label>
+            <select name="Transport" id="Transport">
+                <option value="Bike">Bike</option>
+                <option value="PublicTransit">Public Transit</option>
+                <option value="Car">Car</option>
+                <option value="Walking">Walking</option>
+            </select>
+
+            <label for="EnergySource">Which type of energy does your home use?</label>
+            <select name="EnergySource" id="EnergySource">
+                <option value="Renewable">Renewable</option>
+                <option value="Non-renewable">Non-renewable</option>
+                <option value="Mixed">Mixed</option>
+            </select>
+
+            <label for="Housing">Do you live in an apartment or house?</label>
+            <select name="Housing" id="Housing">
+                <option value="House">House</option>
+                <option value="Apartment">Apartment</option>
+            </select>
+
+            <label for="Clothing">How often do you shop for clothes?</label>
+            <select name="Clothing" id="Clothing">
+                <option value="OftenClothes">Often</option>
+                <option value="SometimesClothes">Sometimes</option>
+                <option value="Rarely">Rarely</option>
+            </select>
+
+            <label for="Sustainability">Do you shop sustainably?</label>
+            <select name="Sustainability" id="Sustainability">
+                <option value="YesSus">Yes</option>
+                <option value="NoSus">No</option>
+            </select>
+
+            <label for="CommInvolv">How involved are you in your community?</label>
+            <select name="CommInvolv" id="CommInvolv">
+                <option value="HighComm">High</option>
+                <option value="MedComm">Medium</option>
+                <option value="LowComm">Low</option>
+            </select>
+
+            <label for="Gender">Which gender do you most strongly identify with?</label>
+            <select name="Gender" id="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Non-binary">Non-binary</option>
+            </select>
+
+            <label for="Plastic">How often do you use plastic products?</label>
+            <select name="Plastic" id="Plastic">
+                <option value="OftenPlas">Often</option>
+                <option value="SometimesPlas">Sometimes</option>
+                <option value="RarelyPlas">Rarely</option>
+            </select>
+
+            <label for="Disposal">How do you dispose of your products?</label>
+            <select name="Disposal" id="Disposal">
+                <option value="Composting">Composting</option>
+                <option value="Recycling">Recycling</option>
+                <option value="Landfill">Landfill</option>
+                <option value="Combination">Combination</option>
+            </select>
+
+            <label for="PhysAct">How do you rate your level of physical activity?</label>
+            <select name="PhysAct" id="PhysAct">
+                <option value="PhysActHigh">High</option>
+                <option value="PhysActMed">Medium</option>
+                <option value="PhysActLow">Low</option>
+            </select>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+                <p>&copy; Your Website Name. All rights reserved.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

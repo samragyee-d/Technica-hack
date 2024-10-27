@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>touchGrass</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Add some basic styles for the flower box */
+        .flower-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em; /* Increase size for main heading */
+            margin-bottom: 20px;
+        }
+        .flower-box h2 {
+            font-size: 2em; /* Increase size for flower type heading */
+            margin-bottom: 10px;
+        }
+        .flower-box p {
+            font-size: 1.2em; /* Increase size for flower description */
+        }
+        #nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center; /* Center the navigation items */
+        }
+        #nav li {
+            display: inline; /* Display items in a line */
+            margin: 0 15px; /* Add spacing between items */
+        }
+        #nav a {
+            color: #2e5b3e; /* Default link color */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 15px; /* Add padding for clickable area */
+            transition: color 0.3s; /* Smooth color transition on hover */
+        }
+        #nav a:hover {
+            color: #ba4748; /* Change color on hover */
+        }
+        /* Darker style for the Sustainability link with !important */
+        #nav a.sustainability {
+            color: #1c3d24 !important; /* Even darker color */
+        }
+        #nav a.sustainability:hover {
+            color: #8a2b2c !important; /* Slightly lighter color on hover */
+        }
+        .ScorePage {
+            color:#2e5b3e;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="userSelection.html" class="sustainability">Sustainability Score Page</a></li>
+                    <li><a href="uploadPic.html">Upload Image</a></li>
+                    <li><a href="output.html">Output Page</a></li>
+                    <li class="current"><a href="flower.html">Flower</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <h1>Flower Information</h1>
+            
+            <div class="flower-box">
+                <h2>Type of Flower: Rose</h2>
+                <p>Roses are known for their beauty and fragrance. They are often associated with love and romance.</p>
+                <a href="output.html" id="ScorePage">Go to score page</a>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+                <p>&copy; Your Website Name. All rights reserved.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

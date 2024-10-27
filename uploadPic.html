@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Grass!!</title>
+    <link rel="stylesheet" href="assets/css/main.css"> <!-- Include main CSS for navigation -->
+    <link rel="stylesheet" href="assets/css/uploadPic.css" />
+    <style>
+        /* Basic styles for the body and form */
+        body {
+            background-color: #69994d; /* Background color */
+            color: #333; /* Darker text color */
+        }
+        .form {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em; /* Increase font size */
+            font-weight: bold; /* Make the text bold */
+            color: #386440; /* Change color if desired */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+        .upload-box {
+            display: inline-block;
+            padding: 20px;
+            border: 2px dashed #aaa;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .upload-box:hover {
+            background-color: #f0f0f0;
+        }
+        input[type="file"] {
+            display: none; /* Hide the default file input */
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #f3ead6; /* Button color */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        input[type="submit"]:hover {
+            background-color: #e1d1c6; /* Darker color on hover */
+        }
+        /* Navbar styles */
+        #nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center; /* Center the navigation items */
+        }
+        #nav li {
+            display: inline; /* Display items in a line */
+            margin: 0 15px; /* Spacing between items */
+        }
+        #nav a {
+            color: #386440; /* Link color */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 15px; /* Padding for clickable area */
+            transition: color 0.3s; /* Smooth color transition on hover */
+        }
+        #nav a:hover {
+            color: #ba4748; /* Change color on hover */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="userSelection.html">Sustainability Score Page</a></li>
+                    <li class="current"><a href="uploadPic.html">Upload Image</a></li>
+                    <li><a href="output.html">Output Page</a></li>
+                    <li><a href="flower.html">Flower</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- Upload Form -->
+        <div class="form">
+            <form action="/action_page.php" class="upload-form">
+                <h1>CHALLENGE: TOUCH GRASS</h1>
+                <label for="myFile" class="upload-box">
+                    Click to upload an image
+                    <input type="file" id="myFile" name="filename" accept="image/*">
+                </label>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
